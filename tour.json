@@ -1,0 +1,304 @@
+    {   
+        "default": {
+            "firstScene": "main1",
+            "title": "Bitlair",
+            "autoLoad": true
+        },
+        
+        "scenes": {
+            "main1": {
+                "title": "Hoofdruimte",
+                "hfov": 110,
+                "pitch": -0.30012471554349834,
+                "yaw": 148.01399312366422,
+                "type": "equirectangular",
+                "panorama": "main2.jpg",
+                "hotSpots": [
+                    {
+                        "pitch": -0.16430934271439585,
+                        "yaw": -192.6068295024704,
+                        "type": "scene",
+                        "sceneId": "main2",
+                        "targetPitch": -6.312799033207387, 
+                        "targetYaw": 171.05730905368108
+                    },
+                    {
+                        "pitch": 2.094555683205228, 
+                        "yaw": 100.0373235627423,
+                        "type": "scene",
+                        "sceneId": "kitchen",
+                        "targetPitch": 8.71388762572763,
+                        "targetYaw": 137.6056832086744
+                    },
+                    {
+                        "pitch": 1.2743805224519125, 
+                        "yaw": 55.00217668690969,
+                        "type": "scene",
+                        "sceneId": "overloop",
+                        "targetPitch": -31.385529982235035,
+                        "targetYaw": 84.59171819364919                    
+                    }
+                ]
+            },
+
+            "main2": {
+                "title": "Hoofdruimte",
+                "hfov": 110,
+                "pitch": -10.728405749258773,
+                "yaw": -28.109483329995676,
+                "type": "equirectangular",
+                "panorama": "main1.jpg",
+                "hotSpots": [
+                    {
+                        "pitch": -3.6931237582403815,
+                        "yaw": -24.48195922168095,
+                        "type": "scene",
+                        "sceneId": "main1",
+                        "targetPitch": -7.620036948926867, 
+                        "targetYaw": 18.243070285144235
+                    },
+                    {
+                        "pitch": 2.042384151125682, 
+                        "yaw": 144.83819002796747,
+                        "type": "scene",
+                        "sceneId": "hal1"
+                    }
+                ]
+            },
+
+            "kitchen": {
+                "title": "Keuken",
+                "hfov": 120,
+                "pitch": 8.71388762572763,
+                "yaw": 137.6056832086744,
+                "type": "equirectangular",
+                "panorama": "keuken.jpg",
+                "hotSpots": [
+                    {
+                        "pitch": -1.5393964676848353,
+                        "yaw": 95.14951089132822,
+                        "type": "scene",
+                        "sceneId": "main1",
+                        "targetPitch": 2.094555683205228, 
+                        "targetYaw": 100.0373235627423
+                    },
+                    {
+                        "pitch": -5.913172299593849, 
+                        "yaw": 189.32715513571122,
+                        "type": "scene",
+                        "sceneId": "overloop",
+                        "targetPitch": -29.47139843796348, 
+                        "targetYaw": 51.302772256371895
+                    }
+                ]
+            },
+
+            "overloop": {
+                "title": "Overloop",
+                "hfov": 120,
+                "pitch": 9.574001795936633,  
+                "yaw": -80.82931120527674,
+                "type": "equirectangular",
+                "panorama": "overloop.jpg",
+                "hotSpots": [
+                    {
+                        "pitch": -2.5959735698034145, 
+                        "yaw": -50.3681398438689,
+                        "type": "scene",
+                        "sceneId": "main1"
+                    },
+                    {
+                        "pitch": -1.518157206595382, 
+                        "yaw": -123.76804411707971,
+                        "type": "scene",
+                        "sceneId": "kitchen"
+                    },
+                    {
+                        "pitch": -24.17512568225503, 
+                        "yaw": 57.101195780264995,
+                        "type": "scene",
+                        "sceneId": "entree"
+                    }
+                ]            
+            },
+
+            "entree": {
+                "title": "Entree",
+                "hfov": 120,
+                "pitch": 7.373070086530988,  
+                "yaw": -72.6203232173342,
+                "type": "equirectangular",
+                "panorama": "entree.jpg",
+                "hotSpots": [
+                    {
+                        "pitch": 7.373070086530988,  
+                        "yaw": -72.6203232173342,
+                        "type": "scene",
+                        "sceneId": "overloop"
+                    }
+                ]
+            },
+
+            "hal1": {
+                "title": "Hal",
+                "hfov": 120,
+                "pitch": -13.589608606517878,  
+                "yaw": -179.98060550954563,
+                "type": "equirectangular",
+                "panorama": "hall1.jpg",
+                "hotSpots": [
+                    {
+                        "pitch": -8.036266750759955,  
+                        "yaw": 150.5115286887892,
+                        "type": "scene",
+                        "sceneId": "hal2"
+                    },
+                    {
+                        "pitch": -6.518096861308457, 
+                        "yaw": -32.74840002331056,
+                        "type": "scene",
+                        "sceneId": "main2"
+                    },
+                    {
+                        "pitch": -9.826750745202952,
+                        "yaw": -111.74017348090221,
+                        "type": "scene",
+                        "sceneId": "lounge"
+                    }
+                ]
+            },
+
+            "hal2": {
+                "title": "Hal",
+                "hfov": 120,
+                "pitch": -13.046910417016832,  
+                "yaw": 118.51249293032737,
+                "type": "equirectangular",
+                "panorama": "hall2.jpg",
+                "hotSpots": [
+                    {
+                        "pitch": -13.046910417016832,  
+                        "yaw": 118.51249293032737,
+                        "type": "scene",
+                        "sceneId": "hal3"
+                    },
+                    {
+                        "pitch": -9.888285134568374, 
+                        "yaw": -58.29276304061415,
+                        "type": "scene",
+                        "sceneId": "hal1",
+                        "targetPitch": -6.21555169605314, 
+                        "targetYaw": -32.99575822078917                
+                    },
+                    {
+                        "pitch": -9.65162513304532, 
+                        "yaw": -151.75345239114552,
+                        "type": "scene",
+                        "sceneId": "flexlab"                
+                    }
+                ]
+            },
+
+            "hal3": {
+                "title": "Hal",
+                "hfov": 120,
+                "pitch": -8.091678587678361,  
+                "yaw": 98.98845553699962,
+                "type": "equirectangular",
+                "panorama": "hall3.jpg",
+                "hotSpots": [
+                    {
+                        "pitch": -4.030569822929367,  
+                        "yaw": 46.18826843846817,
+                        "type": "scene",
+                        "sceneId": "stofhok"
+                    },
+                    {
+                        "pitch": -3.9207059112960376, 
+                        "yaw": -151.03708981811127,
+                        "type": "scene",
+                        "sceneId": "makerlab"
+                    },
+                    {
+                        "pitch": -6.463977124787451, 
+                        "yaw": -49.748698358832605,
+                        "type": "scene",
+                        "sceneId": "hal2",
+                        "targetPitch": -12.620187506415661, 
+                        "targetYaw": -59.360923306750855
+                    }
+                ]
+            },
+
+            "stofhok": {
+                "title": "Stofhok",
+                "hfov": 120,
+                "pitch": -8.091678587678361,  
+                "yaw": 98.98845553699962,
+                "type": "equirectangular",
+                "panorama": "stofhok.jpg",
+                "hotSpots": [
+                    {
+                        "pitch": -7.853158870938044,  
+                        "yaw": -125.72435288870152,
+                        "type": "scene",
+                        "sceneId": "hal3",
+                        "targetPitch": -8.04737439869269, 
+                        "targetYaw": -102.51279819228903
+                    }
+                ]
+            },
+
+            "makerlab": {
+                "title": "Makerlab",
+                "hfov": 120,
+                "pitch": -6.6479520453542325,  
+                "yaw": 135.8149885097681,
+                "type": "equirectangular",
+                "panorama": "makerlab.jpg",
+                "hotSpots": [
+                    {
+                        "pitch": 2.3900065731015276,  
+                        "yaw": 155.29447578982925,
+                        "type": "scene",
+                        "sceneId": "hal3"
+                    }
+                ]
+            },
+
+            "lounge": {
+                "title": "Lounge",
+                "hfov": 120,
+                "pitch": -6.6479520453542325,  
+                "yaw": 135.8149885097681,
+                "type": "equirectangular",
+                "panorama": "lounge.jpg",
+                "hotSpots": [
+                    {
+                        "pitch": -5.11188235286034,  
+                        "yaw": 171.63141940469603,
+                        "type": "scene",
+                        "sceneId": "hal1"
+                    }
+                ]
+            },
+
+            "flexlab": {
+                "title": "Flexlab",
+                "hfov": 120,
+                "pitch": -8.784648883007565,  
+                "yaw": 99.55208970396365,
+                "type": "equirectangular",
+                "panorama": "flexlab.jpg",
+                "hotSpots": [
+                    {
+                        "pitch": -3.2101657087549595,  
+                        "yaw": 157.96266218016868,
+                        "type": "scene",
+                        "sceneId": "hal2"
+                    }
+                ]
+            }
+
+        }
+    }
