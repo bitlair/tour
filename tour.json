@@ -1,29 +1,37 @@
-    {   
+    {
         "default": {
             "firstScene": "main1",
             "title": "Bitlair",
-            "autoLoad": true
+            "autoLoad": true,
+            "hotSpotDebug": false
         },
-        
+
         "scenes": {
             "main1": {
                 "title": "Hoofdruimte",
                 "hfov": 110,
                 "pitch": -0.30012471554349834,
                 "yaw": 148.01399312366422,
-                "type": "equirectangular",
-                "panorama": "main2.jpg",
+                "type": "multires",
+                "multiRes": {
+                    "path": "./main2/%l/%s%y_%x",
+                    "fallbackPath": "./main2/fallback/%s",
+                    "extension": "jpg",
+                    "tileResolution": 512,
+                    "maxLevel": 3,
+                    "cubeResolution": 1464
+                },
                 "hotSpots": [
                     {
                         "pitch": -0.16430934271439585,
                         "yaw": -192.6068295024704,
                         "type": "scene",
                         "sceneId": "main2",
-                        "targetPitch": -6.312799033207387, 
+                        "targetPitch": -6.312799033207387,
                         "targetYaw": 171.05730905368108
                     },
                     {
-                        "pitch": 2.094555683205228, 
+                        "pitch": 2.094555683205228,
                         "yaw": 100.0373235627423,
                         "type": "scene",
                         "sceneId": "kitchen",
@@ -31,12 +39,12 @@
                         "targetYaw": 137.6056832086744
                     },
                     {
-                        "pitch": 1.2743805224519125, 
+                        "pitch": 1.2743805224519125,
                         "yaw": 55.00217668690969,
                         "type": "scene",
                         "sceneId": "overloop",
                         "targetPitch": -31.385529982235035,
-                        "targetYaw": 84.59171819364919                    
+                        "targetYaw": 84.59171819364919
                     }
                 ]
             },
@@ -46,19 +54,26 @@
                 "hfov": 110,
                 "pitch": -10.728405749258773,
                 "yaw": -28.109483329995676,
-                "type": "equirectangular",
-                "panorama": "main1.jpg",
+                "type": "multires",
+                "multiRes": {
+                    "path": "./main1/%l/%s%y_%x",
+                    "fallbackPath": "./main1/fallback/%s",
+                    "extension": "jpg",
+                    "tileResolution": 512,
+                    "maxLevel": 3,
+                    "cubeResolution": 1464
+                },
                 "hotSpots": [
                     {
                         "pitch": -3.6931237582403815,
                         "yaw": -24.48195922168095,
                         "type": "scene",
                         "sceneId": "main1",
-                        "targetPitch": -7.620036948926867, 
+                        "targetPitch": -7.620036948926867,
                         "targetYaw": 18.243070285144235
                     },
                     {
-                        "pitch": 2.042384151125682, 
+                        "pitch": 2.042384151125682,
                         "yaw": 144.83819002796747,
                         "type": "scene",
                         "sceneId": "hal1"
@@ -71,23 +86,30 @@
                 "hfov": 120,
                 "pitch": 8.71388762572763,
                 "yaw": 137.6056832086744,
-                "type": "equirectangular",
-                "panorama": "keuken.jpg",
+                "type": "multires",
+                "multiRes": {
+                    "path": "./keuken/%l/%s%y_%x",
+                    "fallbackPath": "./keuken/fallback/%s",
+                    "extension": "jpg",
+                    "tileResolution": 512,
+                    "maxLevel": 3,
+                    "cubeResolution": 1464
+                },
                 "hotSpots": [
                     {
                         "pitch": -1.5393964676848353,
                         "yaw": 95.14951089132822,
                         "type": "scene",
                         "sceneId": "main1",
-                        "targetPitch": 2.094555683205228, 
+                        "targetPitch": 2.094555683205228,
                         "targetYaw": 100.0373235627423
                     },
                     {
-                        "pitch": -5.913172299593849, 
+                        "pitch": -5.913172299593849,
                         "yaw": 189.32715513571122,
                         "type": "scene",
                         "sceneId": "overloop",
-                        "targetPitch": -29.47139843796348, 
+                        "targetPitch": -29.47139843796348,
                         "targetYaw": 51.302772256371895
                     }
                 ]
@@ -96,45 +118,65 @@
             "overloop": {
                 "title": "Overloop",
                 "hfov": 120,
-                "pitch": 9.574001795936633,  
+                "pitch": 9.574001795936633,
                 "yaw": -80.82931120527674,
-                "type": "equirectangular",
-                "panorama": "overloop.jpg",
+                "type": "multires",
+                "multiRes": {
+                    "path": "./overloop/%l/%s%y_%x",
+                    "fallbackPath": "./overloop/fallback/%s",
+                    "extension": "jpg",
+                    "tileResolution": 512,
+                    "maxLevel": 3,
+                    "cubeResolution": 1464
+                },
                 "hotSpots": [
                     {
-                        "pitch": -2.5959735698034145, 
+                        "pitch": -2.5959735698034145,
                         "yaw": -50.3681398438689,
                         "type": "scene",
                         "sceneId": "main1"
                     },
                     {
-                        "pitch": -1.518157206595382, 
+                        "pitch": -1.518157206595382,
                         "yaw": -123.76804411707971,
                         "type": "scene",
                         "sceneId": "kitchen"
                     },
                     {
-                        "pitch": -24.17512568225503, 
+                        "pitch": -24.17512568225503,
                         "yaw": 57.101195780264995,
                         "type": "scene",
                         "sceneId": "entree"
                     }
-                ]            
+                ]
             },
 
             "entree": {
                 "title": "Entree",
                 "hfov": 120,
-                "pitch": 7.373070086530988,  
-                "yaw": -72.6203232173342,
-                "type": "equirectangular",
-                "panorama": "entree.jpg",
+                "pitch": -7.299972312884426,
+                "yaw": -104.95180738337909,
+                "type": "multires",
+                "multiRes": {
+                    "path": "./entree/%l/%s%y_%x",
+                    "fallbackPath": "./entree/fallback/%s",
+                    "extension": "jpg",
+                    "tileResolution": 512,
+                    "maxLevel": 3,
+                    "cubeResolution": 1464
+                },
                 "hotSpots": [
                     {
-                        "pitch": 7.373070086530988,  
+                        "pitch": 7.373070086530988,
                         "yaw": -72.6203232173342,
                         "type": "scene",
                         "sceneId": "overloop"
+                    },
+                    {
+                        "pitch": 0.6535617377257364,
+                        "yaw": -132.02508060033162,
+                        "type": "scene",
+                        "sceneId": "outside1"
                     }
                 ]
             },
@@ -142,19 +184,26 @@
             "hal1": {
                 "title": "Hal",
                 "hfov": 120,
-                "pitch": -13.589608606517878,  
+                "pitch": -13.589608606517878,
                 "yaw": -179.98060550954563,
-                "type": "equirectangular",
-                "panorama": "hall1.jpg",
+                "type": "multires",
+                "multiRes": {
+                    "path": "./hall1/%l/%s%y_%x",
+                    "fallbackPath": "./hall1/fallback/%s",
+                    "extension": "jpg",
+                    "tileResolution": 512,
+                    "maxLevel": 3,
+                    "cubeResolution": 1464
+                },
                 "hotSpots": [
                     {
-                        "pitch": -8.036266750759955,  
+                        "pitch": -8.036266750759955,
                         "yaw": 150.5115286887892,
                         "type": "scene",
                         "sceneId": "hal2"
                     },
                     {
-                        "pitch": -6.518096861308457, 
+                        "pitch": -6.518096861308457,
                         "yaw": -32.74840002331056,
                         "type": "scene",
                         "sceneId": "main2"
@@ -171,30 +220,37 @@
             "hal2": {
                 "title": "Hal",
                 "hfov": 120,
-                "pitch": -13.046910417016832,  
+                "pitch": -13.046910417016832,
                 "yaw": 118.51249293032737,
-                "type": "equirectangular",
-                "panorama": "hall2.jpg",
+                "type": "multires",
+                "multiRes": {
+                    "path": "./hall2/%l/%s%y_%x",
+                    "fallbackPath": "./hall2/fallback/%s",
+                    "extension": "jpg",
+                    "tileResolution": 512,
+                    "maxLevel": 3,
+                    "cubeResolution": 1464
+                },
                 "hotSpots": [
                     {
-                        "pitch": -13.046910417016832,  
+                        "pitch": -13.046910417016832,
                         "yaw": 118.51249293032737,
                         "type": "scene",
                         "sceneId": "hal3"
                     },
                     {
-                        "pitch": -9.888285134568374, 
+                        "pitch": -9.888285134568374,
                         "yaw": -58.29276304061415,
                         "type": "scene",
                         "sceneId": "hal1",
-                        "targetPitch": -6.21555169605314, 
-                        "targetYaw": -32.99575822078917                
+                        "targetPitch": -6.21555169605314,
+                        "targetYaw": -32.99575822078917
                     },
                     {
-                        "pitch": -9.65162513304532, 
+                        "pitch": -9.65162513304532,
                         "yaw": -151.75345239114552,
                         "type": "scene",
-                        "sceneId": "flexlab"                
+                        "sceneId": "flexlab"
                     }
                 ]
             },
@@ -202,29 +258,36 @@
             "hal3": {
                 "title": "Hal",
                 "hfov": 120,
-                "pitch": -8.091678587678361,  
+                "pitch": -8.091678587678361,
                 "yaw": 98.98845553699962,
-                "type": "equirectangular",
-                "panorama": "hall3.jpg",
+                "type": "multires",
+                "multiRes": {
+                    "path": "./hall3/%l/%s%y_%x",
+                    "fallbackPath": "./hall3/fallback/%s",
+                    "extension": "jpg",
+                    "tileResolution": 512,
+                    "maxLevel": 3,
+                    "cubeResolution": 1464
+                },
                 "hotSpots": [
                     {
-                        "pitch": -4.030569822929367,  
+                        "pitch": -4.030569822929367,
                         "yaw": 46.18826843846817,
                         "type": "scene",
                         "sceneId": "stofhok"
                     },
                     {
-                        "pitch": -3.9207059112960376, 
+                        "pitch": -3.9207059112960376,
                         "yaw": -151.03708981811127,
                         "type": "scene",
                         "sceneId": "makerlab"
                     },
                     {
-                        "pitch": -6.463977124787451, 
+                        "pitch": -6.463977124787451,
                         "yaw": -49.748698358832605,
                         "type": "scene",
                         "sceneId": "hal2",
-                        "targetPitch": -12.620187506415661, 
+                        "targetPitch": -12.620187506415661,
                         "targetYaw": -59.360923306750855
                     }
                 ]
@@ -233,17 +296,24 @@
             "stofhok": {
                 "title": "Stofhok",
                 "hfov": 120,
-                "pitch": -8.091678587678361,  
+                "pitch": -8.091678587678361,
                 "yaw": 98.98845553699962,
-                "type": "equirectangular",
-                "panorama": "stofhok.jpg",
+                "type": "multires",
+                "multiRes": {
+                    "path": "./stofhok/%l/%s%y_%x",
+                    "fallbackPath": "./stofhok/fallback/%s",
+                    "extension": "jpg",
+                    "tileResolution": 512,
+                    "maxLevel": 3,
+                    "cubeResolution": 1464
+                },
                 "hotSpots": [
                     {
-                        "pitch": -7.853158870938044,  
+                        "pitch": -7.853158870938044,
                         "yaw": -125.72435288870152,
                         "type": "scene",
                         "sceneId": "hal3",
-                        "targetPitch": -8.04737439869269, 
+                        "targetPitch": -8.04737439869269,
                         "targetYaw": -102.51279819228903
                     }
                 ]
@@ -252,13 +322,20 @@
             "makerlab": {
                 "title": "Makerlab",
                 "hfov": 120,
-                "pitch": -6.6479520453542325,  
+                "pitch": -6.6479520453542325,
                 "yaw": 135.8149885097681,
-                "type": "equirectangular",
-                "panorama": "makerlab.jpg",
+                "type": "multires",
+                "multiRes": {
+                    "path": "./makerlab/%l/%s%y_%x",
+                    "fallbackPath": "./makerlab/fallback/%s",
+                    "extension": "jpg",
+                    "tileResolution": 512,
+                    "maxLevel": 3,
+                    "cubeResolution": 1464
+                },
                 "hotSpots": [
                     {
-                        "pitch": 2.3900065731015276,  
+                        "pitch": 2.3900065731015276,
                         "yaw": 155.29447578982925,
                         "type": "scene",
                         "sceneId": "hal3"
@@ -269,13 +346,20 @@
             "lounge": {
                 "title": "Lounge",
                 "hfov": 120,
-                "pitch": -6.6479520453542325,  
+                "pitch": -6.6479520453542325,
                 "yaw": 135.8149885097681,
-                "type": "equirectangular",
-                "panorama": "lounge.jpg",
+                "type": "multires",
+                "multiRes": {
+                    "path": "./lounge/%l/%s%y_%x",
+                    "fallbackPath": "./lounge/fallback/%s",
+                    "extension": "jpg",
+                    "tileResolution": 512,
+                    "maxLevel": 3,
+                    "cubeResolution": 1464
+                },
                 "hotSpots": [
                     {
-                        "pitch": -5.11188235286034,  
+                        "pitch": -5.11188235286034,
                         "yaw": 171.63141940469603,
                         "type": "scene",
                         "sceneId": "hal1"
@@ -286,16 +370,212 @@
             "flexlab": {
                 "title": "Flexlab",
                 "hfov": 120,
-                "pitch": -8.784648883007565,  
+                "pitch": -8.784648883007565,
                 "yaw": 99.55208970396365,
-                "type": "equirectangular",
-                "panorama": "flexlab.jpg",
+                "type": "multires",
+                "multiRes": {
+                    "path": "./flexlab/%l/%s%y_%x",
+                    "fallbackPath": "./flexlab/fallback/%s",
+                    "extension": "jpg",
+                    "tileResolution": 512,
+                    "maxLevel": 3,
+                    "cubeResolution": 1464
+                },
                 "hotSpots": [
                     {
-                        "pitch": -3.2101657087549595,  
+                        "pitch": -3.2101657087549595,
                         "yaw": 157.96266218016868,
                         "type": "scene",
                         "sceneId": "hal2"
+                    }
+                ]
+            },
+
+            "outside1": {
+                "type": "multires",
+                "multiRes": {
+                    "path": "./outside1/%l/%s%y_%x",
+                    "fallbackPath": "./outside1/fallback/%s",
+                    "extension": "jpg",
+                    "tileResolution": 512,
+                    "maxLevel": 3,
+                    "cubeResolution": 1464
+                },
+                "pitch": -2.07291624647552,
+                "yaw": -167.75894598165513,
+                "hotSpots": [
+                    {
+                        "pitch": 2.1310930921298317,
+                        "yaw": -93.06483953544998,
+                        "type": "scene",
+                        "sceneId": "outside2"
+                    },
+                    {
+                        "pitch": -0.7128873300453512,
+                        "yaw": -200.33774199984038,
+                        "type": "scene",
+                        "sceneId": "entree"
+                    },
+                    {
+                        "pitch": -6.361724472460354,
+                        "yaw": -189.20325124558508,
+                        "type": "info",
+                        "text": "Druk op de deurbel om de deur te openen."
+                    }
+                ]
+            },
+
+            "outside2": {
+                "type": "multires",
+                "multiRes": {
+                    "path": "./outside2/%l/%s%y_%x",
+                    "fallbackPath": "./outside2/fallback/%s",
+                    "extension": "jpg",
+                    "tileResolution": 512,
+                    "maxLevel": 3,
+                    "cubeResolution": 1464
+                },
+                "pitch": -1.202131980052983,
+                "yaw": 142.81419458845744,
+                "hotSpots": [
+                    {
+                        "pitch": -5.740150171674203,
+                        "yaw": 179.78471493127148,
+                        "type": "scene",
+                        "sceneId": "outside3",
+                        "targetPitch": -0.8851327881815365,
+                        "targetYaw": 177.84022202773954
+                    },
+                    {
+                        "pitch": -1.3506317676418396,
+                        "yaw": 116.51472749615712,
+                        "type": "scene",
+                        "sceneId": "outside1"
+                    }
+                ]
+            },
+
+            "outside3": {
+                "type": "multires",
+                "multiRes": {
+                    "path": "./outside3/%l/%s%y_%x",
+                    "fallbackPath": "./outside3/fallback/%s",
+                    "extension": "jpg",
+                    "tileResolution": 512,
+                    "maxLevel": 3,
+                    "cubeResolution": 1464
+                },
+                "hotSpots": [
+                    {
+                        "pitch": 0,
+                        "yaw": 0,
+                        "type": "scene",
+                        "sceneId": "outside2"
+                    },
+                    {
+                        "pitch": -0.8851327881815365,
+                        "yaw": 177.84022202773954,
+                        "type": "scene",
+                        "sceneId": "outside4",
+                        "targetPitch": -2.748549745418766,
+                        "targetYaw": 168.89878152418203,
+                        "targetHfov": 120
+                    }
+                ]
+            },
+
+            "outside4": {
+                "type": "multires",
+                "multiRes": {
+                    "path": "./outside4/%l/%s%y_%x",
+                    "fallbackPath": "./outside4/fallback/%s",
+                    "extension": "jpg",
+                    "tileResolution": 512,
+                    "maxLevel": 3,
+                    "cubeResolution": 1464
+                },
+                "hotSpots": [
+                    {
+                        "pitch": -0.8246826449236899,
+                        "yaw": 176.6626362367202,
+                        "type": "scene",
+                        "sceneId": "outside5",
+                        "targetPitch": 1.010437822584903,
+                        "targetYaw": 182.8938626422247
+                    },
+                    {
+                        "pitch": 2.6572024975498887,
+                        "yaw": -6.364577572240574,
+                        "type": "scene",
+                        "sceneId": "outside3",
+                        "targetPitch": "same",
+                        "targetYaw": "same"
+                    }
+                ]
+            },
+
+            "outside5": {
+                "type": "multires",
+                "multiRes": {
+                    "path": "./outside5/%l/%s%y_%x",
+                    "fallbackPath": "./outside5/fallback/%s",
+                    "extension": "jpg",
+                    "tileResolution": 512,
+                    "maxLevel": 3,
+                    "cubeResolution": 1464
+                },
+                "pitch": 0.7754302064856802,
+                "yaw": 1.8166941166311865,
+                "hotSpots": [
+                    {
+                        "pitch": 1.3807165524655864,
+                        "yaw": 183.179792275532,
+                        "type": "scene",
+                        "sceneId": "outside6",
+                        "targetPitch": 0.8181045816675361,
+                        "targetYaw": -17.58193785226587
+                    },
+                    {
+                        "pitch": 3.2923651295947844,
+                        "yaw": -4.151888248372342,
+                        "type": "scene",
+                        "sceneId": "outside4",
+                        "targetPitch": "same",
+                        "targetYaw": "same",
+                        "text": "Richting de voordeur"
+                    },
+                    {
+                        "pitch": 1.1418521410969897,
+                        "yaw": 44.71148775548252,
+                        "type": "info",
+                        "text": "Mocht het hek gesloten zijn, bel dan even met de space, dan komen we open doen."
+                    },
+                    {
+                        "pitch": 10.835354809693175,
+                        "yaw": 10.47866771809204,
+                        "type": "scene",
+                        "sceneId": "main1",
+                        "text": "Direct naar binnen"
+                    }
+                ]
+            },
+
+            "outside6": {
+                "type": "multires",
+                "multiRes": {
+                    "path": "./outside6/%l/%s%y_%x",
+                    "fallbackPath": "./outside6/fallback/%s",
+                    "extension": "jpg",
+                    "tileResolution": 512,
+                    "maxLevel": 3,
+                    "cubeResolution": 1464
+                },
+                "hotSpots": [
+                    {
+                        "pitch": 0.8181045816675361,
+                        "yaw": -17.58193785226587,
+                        "type": "scene",
+                        "sceneId": "outside5"
                     }
                 ]
             }
