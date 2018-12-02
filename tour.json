@@ -1,6 +1,6 @@
     {
         "default": {
-            "firstScene": "main1",
+            "firstScene": "outside1",
             "title": "Bitlair",
             "autoLoad": true,
             "hotSpotDebug": false
@@ -43,8 +43,8 @@
                         "yaw": 55.00217668690969,
                         "type": "scene",
                         "sceneId": "overloop",
-                        "targetPitch": -31.385529982235035,
-                        "targetYaw": 84.59171819364919
+                        "targetPitch": -22.375021857355648,
+                        "targetYaw": -4.257740942490074
                     }
                 ]
             },
@@ -77,6 +77,36 @@
                         "yaw": 144.83819002796747,
                         "type": "scene",
                         "sceneId": "hal1"
+                    },
+                    {
+                        "pitch": -2.1248071328770473,
+                        "yaw": 20.459977094564184,
+                        "type": "scene",
+                        "sceneId": "materiaalhok"
+                    }
+                ]
+            },
+
+            "materiaalhok": {
+                "title": "Materiaal Hok",
+                "hfov": 120,
+                "pitch": -10.037248084436094,
+                "yaw": -102.95121862762421,
+                "type": "multires",
+                "multiRes": {
+                    "path": "./materiaalhok/%l/%s%y_%x",
+                    "fallbackPath": "./materiaalhok/fallback/%s",
+                    "extension": "jpg",
+                    "tileResolution": 512,
+                    "maxLevel": 4,
+                    "cubeResolution": 2472
+                },
+                "hotSpots": [
+                    {
+                        "pitch": -10.037248084436094,
+                        "yaw": -102.95121862762421,
+                        "type": "scene",
+                        "sceneId": "main2"
                     }
                 ]
             },
@@ -109,8 +139,8 @@
                         "yaw": 189.32715513571122,
                         "type": "scene",
                         "sceneId": "overloop",
-                        "targetPitch": -29.47139843796348,
-                        "targetYaw": 51.302772256371895
+                        "targetPitch": -32.15579796561711,
+                        "targetYaw": -11.311414466379242
                     }
                 ]
             },
@@ -118,35 +148,37 @@
             "overloop": {
                 "title": "Overloop",
                 "hfov": 120,
-                "pitch": 9.574001795936633,
-                "yaw": -80.82931120527674,
+                "pitch": -6.339176636965266,
+                "yaw": -174.65175702540625,
                 "type": "multires",
                 "multiRes": {
                     "path": "./overloop/%l/%s%y_%x",
                     "fallbackPath": "./overloop/fallback/%s",
                     "extension": "jpg",
                     "tileResolution": 512,
-                    "maxLevel": 3,
-                    "cubeResolution": 1464
+                    "maxLevel": 4,
+                    "cubeResolution": 2472
                 },
                 "hotSpots": [
                     {
-                        "pitch": -2.5959735698034145,
-                        "yaw": -50.3681398438689,
+                        "pitch": -5.832108976841204,
+                        "yaw": -130.53448280261864,
                         "type": "scene",
                         "sceneId": "main1"
                     },
                     {
-                        "pitch": -1.518157206595382,
-                        "yaw": -123.76804411707971,
+                        "pitch": -6.466673520326796,
+                        "yaw": 173.28876317709077,
                         "type": "scene",
                         "sceneId": "kitchen"
                     },
                     {
-                        "pitch": -24.17512568225503,
-                        "yaw": 57.101195780264995,
+                        "pitch": -38.00345358477418,
+                        "yaw": -7.1688855390827095,
                         "type": "scene",
-                        "sceneId": "entree"
+                        "sceneId": "entree",
+                        "targetPitch": -6.338382302760312,
+                        "targetYaw": 8.555074011109951
                     }
                 ]
             },
@@ -154,27 +186,27 @@
             "entree": {
                 "title": "Entree",
                 "hfov": 120,
-                "pitch": -7.299972312884426,
-                "yaw": -104.95180738337909,
+                "pitch": -8.598609040508231,
+                "yaw": 108.22157284598468,
                 "type": "multires",
                 "multiRes": {
                     "path": "./entree/%l/%s%y_%x",
                     "fallbackPath": "./entree/fallback/%s",
                     "extension": "jpg",
                     "tileResolution": 512,
-                    "maxLevel": 3,
-                    "cubeResolution": 1464
+                    "maxLevel": 4,
+                    "cubeResolution": 2472
                 },
                 "hotSpots": [
                     {
-                        "pitch": 7.373070086530988,
-                        "yaw": -72.6203232173342,
+                        "pitch": -1.1947864772502528,
+                        "yaw": 58.31309967571766,
                         "type": "scene",
                         "sceneId": "overloop"
                     },
                     {
-                        "pitch": 0.6535617377257364,
-                        "yaw": -132.02508060033162,
+                        "pitch": 7.759284946102754,
+                        "yaw": -30.06635371891057,
                         "type": "scene",
                         "sceneId": "outside1"
                     }
@@ -192,25 +224,25 @@
                     "fallbackPath": "./hall1/fallback/%s",
                     "extension": "jpg",
                     "tileResolution": 512,
-                    "maxLevel": 3,
-                    "cubeResolution": 1464
+                    "maxLevel": 4,
+                    "cubeResolution": 2472
                 },
                 "hotSpots": [
                     {
-                        "pitch": -8.036266750759955,
-                        "yaw": 150.5115286887892,
+                        "pitch": -2.4672962044258657,
+                        "yaw": -173.09585185891882,
                         "type": "scene",
                         "sceneId": "hal2"
                     },
                     {
-                        "pitch": -6.518096861308457,
-                        "yaw": -32.74840002331056,
+                        "pitch": -3.2756017922618645,
+                        "yaw": 7.816970358471282,
                         "type": "scene",
                         "sceneId": "main2"
                     },
                     {
-                        "pitch": -9.826750745202952,
-                        "yaw": -111.74017348090221,
+                        "pitch": -7.691875701110773,
+                        "yaw": -84.13418862283372,
                         "type": "scene",
                         "sceneId": "lounge"
                     }
@@ -220,35 +252,35 @@
             "hal2": {
                 "title": "Hal",
                 "hfov": 120,
-                "pitch": -13.046910417016832,
-                "yaw": 118.51249293032737,
+                "pitch": -6.074790313078681,
+                "yaw": -172.6480502886472,
                 "type": "multires",
                 "multiRes": {
                     "path": "./hall2/%l/%s%y_%x",
                     "fallbackPath": "./hall2/fallback/%s",
                     "extension": "jpg",
                     "tileResolution": 512,
-                    "maxLevel": 3,
-                    "cubeResolution": 1464
+                    "maxLevel": 4,
+                    "cubeResolution": 2472
                 },
                 "hotSpots": [
                     {
-                        "pitch": -13.046910417016832,
-                        "yaw": 118.51249293032737,
+                        "pitch": -6.074790313078681,
+                        "yaw": -172.6480502886472,
                         "type": "scene",
                         "sceneId": "hal3"
                     },
                     {
-                        "pitch": -9.888285134568374,
-                        "yaw": -58.29276304061415,
+                        "pitch": -2.914302434181725,
+                        "yaw": 6.019639158652559,
                         "type": "scene",
                         "sceneId": "hal1",
-                        "targetPitch": -6.21555169605314,
-                        "targetYaw": -32.99575822078917
+                        "targetPitch": -6.665170476254758,
+                        "targetYaw": 6.8162420562516886
                     },
                     {
-                        "pitch": -9.65162513304532,
-                        "yaw": -151.75345239114552,
+                        "pitch": -9.178665796915897,
+                        "yaw": -85.52941434854918,
                         "type": "scene",
                         "sceneId": "flexlab"
                     }
@@ -258,37 +290,37 @@
             "hal3": {
                 "title": "Hal",
                 "hfov": 120,
-                "pitch": -8.091678587678361,
-                "yaw": 98.98845553699962,
+                "pitch": -8.024039695752588,
+                "yaw": -172.6781129459092,
                 "type": "multires",
                 "multiRes": {
                     "path": "./hall3/%l/%s%y_%x",
                     "fallbackPath": "./hall3/fallback/%s",
                     "extension": "jpg",
                     "tileResolution": 512,
-                    "maxLevel": 3,
-                    "cubeResolution": 1464
+                    "maxLevel": 4,
+                    "cubeResolution": 2472
                 },
                 "hotSpots": [
                     {
-                        "pitch": -4.030569822929367,
-                        "yaw": 46.18826843846817,
+                        "pitch": -6.876901034662346,
+                        "yaw": 149.3967989514544,
                         "type": "scene",
                         "sceneId": "stofhok"
                     },
                     {
-                        "pitch": -3.9207059112960376,
-                        "yaw": -151.03708981811127,
+                        "pitch": -8.937148102958869,
+                        "yaw": -140.88393172742457,
                         "type": "scene",
                         "sceneId": "makerlab"
                     },
                     {
-                        "pitch": -6.463977124787451,
-                        "yaw": -49.748698358832605,
+                        "pitch": 0.8502984376472114,
+                        "yaw": 8.636250528806102,
                         "type": "scene",
                         "sceneId": "hal2",
-                        "targetPitch": -12.620187506415661,
-                        "targetYaw": -59.360923306750855
+                        "targetPitch": -2.894574151263553,
+                        "targetYaw": 5.919926249693027
                     }
                 ]
             },
@@ -296,25 +328,23 @@
             "stofhok": {
                 "title": "Stofhok",
                 "hfov": 120,
-                "pitch": -8.091678587678361,
-                "yaw": 98.98845553699962,
+                "pitch": -13.125733660644057,
+                "yaw": -27.810778444933526,
                 "type": "multires",
                 "multiRes": {
                     "path": "./stofhok/%l/%s%y_%x",
                     "fallbackPath": "./stofhok/fallback/%s",
                     "extension": "jpg",
                     "tileResolution": 512,
-                    "maxLevel": 3,
-                    "cubeResolution": 1464
+                    "maxLevel": 4,
+                    "cubeResolution": 2472
                 },
                 "hotSpots": [
                     {
-                        "pitch": -7.853158870938044,
-                        "yaw": -125.72435288870152,
+                        "pitch": -7.330597099463316,
+                        "yaw": -113.57930061866237,
                         "type": "scene",
-                        "sceneId": "hal3",
-                        "targetPitch": -8.04737439869269,
-                        "targetYaw": -102.51279819228903
+                        "sceneId": "hal3"
                     }
                 ]
             },
@@ -322,21 +352,21 @@
             "makerlab": {
                 "title": "Makerlab",
                 "hfov": 120,
-                "pitch": -6.6479520453542325,
-                "yaw": 135.8149885097681,
+                "pitch": -3.8439855371345075,
+                "yaw": 170.7102789686246,
                 "type": "multires",
                 "multiRes": {
                     "path": "./makerlab/%l/%s%y_%x",
                     "fallbackPath": "./makerlab/fallback/%s",
                     "extension": "jpg",
                     "tileResolution": 512,
-                    "maxLevel": 3,
-                    "cubeResolution": 1464
+                    "maxLevel": 4,
+                    "cubeResolution": 2472
                 },
                 "hotSpots": [
                     {
-                        "pitch": 2.3900065731015276,
-                        "yaw": 155.29447578982925,
+                        "pitch": -0.92339862577635,
+                        "yaw": 121.49341865785107,
                         "type": "scene",
                         "sceneId": "hal3"
                     }
@@ -346,23 +376,25 @@
             "lounge": {
                 "title": "Lounge",
                 "hfov": 120,
-                "pitch": -6.6479520453542325,
-                "yaw": 135.8149885097681,
+                "pitch": -5.308615346195358,
+                "yaw": 92.02049489744388,
                 "type": "multires",
                 "multiRes": {
                     "path": "./lounge/%l/%s%y_%x",
                     "fallbackPath": "./lounge/fallback/%s",
                     "extension": "jpg",
                     "tileResolution": 512,
-                    "maxLevel": 3,
-                    "cubeResolution": 1464
+                    "maxLevel": 4,
+                    "cubeResolution": 2472
                 },
                 "hotSpots": [
                     {
-                        "pitch": -5.11188235286034,
-                        "yaw": 171.63141940469603,
+                        "pitch": -5.308615346195358,
+                        "yaw": 92.02049489744388,
                         "type": "scene",
-                        "sceneId": "hal1"
+                        "sceneId": "hal1",
+                        "targetPitch": -7.691875701110773,
+                        "targetYaw": -84.13418862283372
                     }
                 ]
             },
@@ -378,15 +410,17 @@
                     "fallbackPath": "./flexlab/fallback/%s",
                     "extension": "jpg",
                     "tileResolution": 512,
-                    "maxLevel": 3,
-                    "cubeResolution": 1464
+                    "maxLevel": 4,
+                    "cubeResolution": 2472
                 },
                 "hotSpots": [
                     {
-                        "pitch": -3.2101657087549595,
-                        "yaw": 157.96266218016868,
+                        "pitch": -7.212268706063517,
+                        "yaw": 115.5037811963877,
                         "type": "scene",
-                        "sceneId": "hal2"
+                        "sceneId": "hal2",
+                        "targetPitch": -9.178665796915897,
+                        "targetYaw": -85.52941434854918
                     }
                 ]
             },
