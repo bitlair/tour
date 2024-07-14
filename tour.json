@@ -1,747 +1,336 @@
-    {
-        "default": {
-            "firstScene": "outside1",
-            "title": "Bitlair",
-            "autoLoad": true,
-            "hotSpotDebug": false
+{
+    "default": {
+        "firstScene": "buiten_kruising",
+        "title": "Bitlair",
+        "autoLoad": true,
+        "hotSpotDebug": true
+    },
+
+    "scenes": {
+        "main1": {
+            "title": "Hoofdruimte",
+            "hfov": 110,
+            "pitch": -0.30012471554349834,
+            "yaw": 148.01399312366422,
+            "type": "multires",
+            "multiRes": {
+                "shtHash": "5b~pWVRjj?j[ayRjofj[ofR*off6j]oyozWBayoLofofofj[j[WBayWWayofayV@afofj[WBj]",
+                "path": "./space4/test/%l/%s%y_%x",
+                "fallbackPath": "./space4/test/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 4,
+                "cubeResolution": 2472
+            },
+            "hotSpots": [
+                {
+                    "pitch": -0.16430934271439585,
+                    "yaw": -192.6068295024704,
+                    "type": "scene",
+                    "sceneId": "main2",
+                    "targetPitch": -6.312799033207387,
+                    "targetYaw": 171.05730905368108
+                },
+                {
+                    "pitch": 2.094555683205228,
+                    "yaw": 100.0373235627423,
+                    "type": "scene",
+                    "sceneId": "kitchen",
+                    "targetPitch": 8.71388762572763,
+                    "targetYaw": 137.6056832086744
+                },
+                {
+                    "pitch": 1.2743805224519125,
+                    "yaw": 55.00217668690969,
+                    "type": "scene",
+                    "sceneId": "overloop",
+                    "targetPitch": -17.862344237901656, 
+                    "targetYaw": -114.34147903814002
+                }
+            ]
         },
-
-        "scenes": {
-            "main1": {
-                "title": "Hoofdruimte",
-                "hfov": 110,
-                "pitch": -0.30012471554349834,
-                "yaw": 148.01399312366422,
-                "type": "multires",
-                "multiRes": {
-                    "path": "./main2/%l/%s%y_%x",
-                    "fallbackPath": "./main2/fallback/%s",
-                    "extension": "jpg",
-                    "tileResolution": 512,
-                    "maxLevel": 3,
-                    "cubeResolution": 1464
-                },
-                "hotSpots": [
-                    {
-                        "pitch": -0.16430934271439585,
-                        "yaw": -192.6068295024704,
-                        "type": "scene",
-                        "sceneId": "main2",
-                        "targetPitch": -6.312799033207387,
-                        "targetYaw": 171.05730905368108
-                    },
-                    {
-                        "pitch": 2.094555683205228,
-                        "yaw": 100.0373235627423,
-                        "type": "scene",
-                        "sceneId": "kitchen",
-                        "targetPitch": 8.71388762572763,
-                        "targetYaw": 137.6056832086744
-                    },
-                    {
-                        "pitch": 1.2743805224519125,
-                        "yaw": 55.00217668690969,
-                        "type": "scene",
-                        "sceneId": "overloop",
-                        "targetPitch": -17.862344237901656, 
-                        "targetYaw": -114.34147903814002
-                    }
-                ]
+    
+       "buiten_kruising": {
+            "title": "Kruising",
+            "hfov": 110,
+            "pitch": 3.442853695805298,
+            "yaw": -23.73234495678511,
+            "type": "multires",
+            "multiRes": {
+                "shtHash": "5Y~q-=WAkDt7t7Rjj[j[ofRjj?jtayj]off6WBfRj[ays:ofoMofofWBaxayayaeayayj[WBj[",
+                "path": "space4/buiten_kruising/%l/%s%y_%x",
+                "fallbackPath": "space4/buiten_kruising/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 4,
+                "cubeResolution": 2472
             },
-
-            "main2": {
-                "title": "Hoofdruimte",
-                "hfov": 110,
-                "pitch": -10.728405749258773,
-                "yaw": -28.109483329995676,
-                "type": "multires",
-                "multiRes": {
-                    "path": "./main1/%l/%s%y_%x",
-                    "fallbackPath": "./main1/fallback/%s",
-                    "extension": "jpg",
-                    "tileResolution": 512,
-                    "maxLevel": 3,
-                    "cubeResolution": 1464
+            "hotSpots": [
+                {
+                    "pitch": 1.5831796137063912, 
+                    "yaw": -62.312942293210156,
+                    "type": "scene",
+                    "sceneId": "buiten_parkeerplaats"
                 },
-                "hotSpots": [
-                    {
-                        "pitch": -3.6931237582403815,
-                        "yaw": -24.48195922168095,
-                        "type": "scene",
-                        "sceneId": "main1",
-                        "targetPitch": -7.620036948926867,
-                        "targetYaw": 18.243070285144235
-                    },
-                    {
-                        "pitch": 2.042384151125682,
-                        "yaw": 144.83819002796747,
-                        "type": "scene",
-                        "sceneId": "hal1"
-                    },
-                    {
-                        "pitch": -2.1248071328770473,
-                        "yaw": 20.459977094564184,
-                        "type": "scene",
-                        "sceneId": "materiaalhok"
-                    }
-                ]
+                {
+                    "pitch": 2.6678029723463106,
+                    "yaw": -1.2010655862620752,
+                    "type": "scene",
+                    "sceneId": "buiten_voor"
+                },
+                {
+                    "pitch": 12.664809693768937, 
+                    "yaw": -37.620619317330224,
+                    "type": "info",
+                    "text": "Bitlair"
+                }
+            ]
+        },
+        "buiten_voor": {
+            "title": "Buiten",
+            "hfov": 110,
+            "pitch": 14.259688871473035,
+            "yaw": -88.88018026621286,
+            "type": "multires",
+            "multiRes": {
+                "shtHash": "5W~q.8WBbIj[t7Rjazt7ayWBfPofj[a{ofayWBj[j[j@RQWAj[t7j[j[t7jsj@offPoLofj[of",
+                "path": "space4/buiten_voor/%l/%s%y_%x",
+                "fallbackPath": "space4/buiten_voor/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 4,
+                "cubeResolution": 2472
             },
-
-            "materiaalhok": {
-                "title": "Materiaal Hok",
-                "hfov": 120,
-                "pitch": -10.037248084436094,
-                "yaw": -102.95121862762421,
-                "type": "multires",
-                "multiRes": {
-                    "path": "./materiaalhok/%l/%s%y_%x",
-                    "fallbackPath": "./materiaalhok/fallback/%s",
-                    "extension": "jpg",
-                    "tileResolution": 512,
-                    "maxLevel": 4,
-                    "cubeResolution": 2472
+            "hotSpots": [
+                {
+                    "pitch": 11.169769558267028, 
+                    "yaw": -106.94351108570159,
+                    "type": "scene",
+                    "sceneId": "lift_beneden",
+                    "targetPitch": -1.6297442402367168, 
+                    "targetYaw": -114.89902873236744
                 },
-                "hotSpots": [
-                    {
-                        "pitch": -10.037248084436094,
-                        "yaw": -102.95121862762421,
-                        "type": "scene",
-                        "sceneId": "main2"
-                    }
-                ]
+                {
+                    "pitch": 11.859622661365698,  
+                    "yaw": -74.61680177942264,
+                    "type": "scene",
+                    "sceneId": "trap_onder"
+                },
+                {
+                    "pitch": 9.899380006918882, 
+                    "yaw": -39.83658158542744,
+                    "type": "scene",
+                    "sceneId": "buiten_parkeerplaats"
+                },
+                {
+                    "pitch": 4.9841960567710935, 
+                    "yaw": -164.09201734183983,
+                    "type": "scene",
+                    "sceneId": "buiten_kruising"
+                }
+            ]
+        },
+        "buiten_parkeerplaats": {
+            "title": "Parkeerplaats",
+            "hfov": 110,
+            "pitch": 0.543260726713129,
+            "yaw": 128.99137855523014,
+            "type": "multires",
+            "multiRes": {
+                "shtHash": "5W~q-=jtozs:s:RjayfRoLM{jsj[a}ayj[ayj[fkayj[t7t7WBj[j[ayWBofaya|ayoeayj[of",
+                "path": "space4/buiten_parkeerplaats/%l/%s%y_%x",
+                "fallbackPath": "space4/buiten_parkeerplaats/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 4,
+                "cubeResolution": 2472
             },
-
-            "kitchen": {
-                "title": "Keuken",
-                "hfov": 120,
-                "pitch": 8.71388762572763,
-                "yaw": 137.6056832086744,
-                "type": "multires",
-                "multiRes": {
-                    "path": "./keuken/%l/%s%y_%x",
-                    "fallbackPath": "./keuken/fallback/%s",
-                    "extension": "jpg",
-                    "tileResolution": 512,
-                    "maxLevel": 3,
-                    "cubeResolution": 1464
+            "hotSpots": [
+                {
+                    "pitch": -4.23342805773073, 
+                    "yaw": 88.75445523829362,
+                    "type": "scene",
+                    "sceneId": "buiten_voor"
                 },
-                "hotSpots": [
-                    {
-                        "pitch": -1.5393964676848353,
-                        "yaw": 95.14951089132822,
-                        "type": "scene",
-                        "sceneId": "main1",
-                        "targetPitch": 2.094555683205228,
-                        "targetYaw": 100.0373235627423
-                    },
-                    {
-                        "pitch": -5.913172299593849,
-                        "yaw": 189.32715513571122,
-                        "type": "scene",
-                        "sceneId": "overloop",
-                        "targetPitch": 5.798476492239096, 
-                        "targetYaw": 14.030341941694235
-                    }
-                ]
+                {
+                    "pitch": 0.9549665741268378, 
+                    "yaw": 178.4208012073757,
+                    "type": "scene",
+                    "sceneId": "buiten_kruising"
+                }
+            ]
+        },
+        "lift_beneden": {
+            "title": "Lift (beneden)",
+            "hfov": 110,
+            "pitch": 2.3031642804169086,
+            "yaw": 25.728853546454694,
+            "type": "multires",
+            "multiRes": {
+                "shtHash": "5S_Nt7RjMxt7jYRjj[R*R+WCayj[WBWWjtaeayj?WBaxM|WAt6s:ofoet7fkj[WDazofofj[oL",
+                "path": "space4/lift_beneden/%l/%s%y_%x",
+                "fallbackPath": "space4/lift_beneden/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 4,
+                "cubeResolution": 2472
             },
-
-            "overloop": {
-                "title": "Overloop",
-                "hfov": 120,
-                "pitch": 4.082564806304807, 
-                "yaw": 38.62813437558035,
-                "type": "multires",
-                "multiRes": {
-                    "path": "./overloop/%l/%s%y_%x",
-                    "fallbackPath": "./overloop/fallback/%s",
-                    "extension": "jpg",
-                    "tileResolution": 512,
-                    "maxLevel": 4,
-                    "cubeResolution": 2472
+            "hotSpots": [
+                {
+                    "pitch": -3.0551570571038664, 
+                    "yaw": 2.610533421872102,
+                    "type": "scene",
+                    "sceneId": "lift_boven"
                 },
-                "hotSpots": [
-                    {
-                        "pitch": -0.8099317539190987, 
-                        "yaw": 72.1691453180167,
-                        "type": "scene",
-                        "sceneId": "main1"
-                    },
-                    {
-                        "pitch": 5.798476492239096, 
-                        "yaw": 14.030341941694235,
-                        "type": "scene",
-                        "sceneId": "kitchen"
-                    },
-                    {
-                        "pitch": -39.06371234209494,
-                        "yaw": -152.11335549887264,
-                        "type": "scene",
-                        "sceneId": "entree",
-                        "targetPitch": -6.338382302760312,
-                        "targetYaw": 8.555074011109951
-                    }
-                ]
+                {
+                    "pitch": 21.675905450740398, 
+                    "yaw": -157.79064041137045,
+                    "type": "scene",
+                    "sceneId": "lift_boven",
+                    "targetPitch": 0.3510813783093194, 
+                    "targetYaw": -82.06309140592143
+                },
+                {
+                    "pitch": -7.049344927882996, 
+                    "yaw": 63.439850493645224,
+                    "type": "scene",
+                    "sceneId": "buiten_voor"
+                }
+            ]
+        },
+        "lift_boven": {
+            "title": "Lift (beneden)",
+            "hfov": 120,
+            "pitch": -4.090061824528313,
+            "yaw": -21.25717419097684,
+            "type": "multires",
+            "multiRes": {
+                "shtHash": "5T_Nxun$M{s:ofWBWBayRkV@fkj[ayn$WBa}f6a|f6R+IoayxZoeofkDoMofofj?ofj[kCofae",
+                "path": "space4/lift_boven/%l/%s%y_%x",
+                "fallbackPath": "space4/lift_boven/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 4,
+                "cubeResolution": 2472
             },
-
-            "entree": {
-                "title": "Entree",
-                "hfov": 120,
-                "pitch": -8.598609040508231,
-                "yaw": 108.22157284598468,
-                "type": "multires",
-                "multiRes": {
-                    "path": "./entree/%l/%s%y_%x",
-                    "fallbackPath": "./entree/fallback/%s",
-                    "extension": "jpg",
-                    "tileResolution": 512,
-                    "maxLevel": 4,
-                    "cubeResolution": 2472
+            "hotSpots": [
+                {
+                    "pitch": 5.298913420030164,
+                    "yaw": -89.55524635041695,
+                    "type": "scene",
+                    "sceneId": "toilet"
                 },
-                "hotSpots": [
-                    {
-                        "pitch": -1.1947864772502528,
-                        "yaw": 58.31309967571766,
-                        "type": "scene",
-                        "sceneId": "overloop"
-                    },
-                    {
-                        "pitch": 7.782889395236605, 
-                        "yaw": -13.138689993816623,
-                        "type": "scene",
-                        "sceneId": "outside1",
-                        "targetPitch": 8.38451273607624, 
-                        "targetYaw": -31.455266128723643
-                    }
-                ]
+                {
+                    "pitch": -41.24021421922611, 
+                    "yaw": -195.93512404756842,
+                    "type": "scene",
+                    "sceneId": "lift_beneden"
+                },
+                {
+                    "pitch": -0.29454344751663936, 
+                    "yaw": 23.11033165703669,
+                    "type": "scene",
+                    "sceneId": "lift_beneden"
+                }
+            ]
+        },
+        "toilet": {
+            "title": "Toiletten",
+            "hfov": 120,
+            "pitch": 3.695282206452822,
+            "yaw":  -91.73915856932284,
+            "type": "multires",
+            "multiRes": {
+                "shtHash": "5s~VoKRjM{j[adazWBj[j]WCj[j[aya#fPazWBfPWCayWBfPj[WVj[WBf6fQayj[ayfQayj[j[",
+                "path": "space4/toilet/%l/%s%y_%x",
+                "fallbackPath": "space4/toilet/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 4,
+                "cubeResolution": 2472
             },
-
-            "hal1": {
-                "title": "Hal",
-                "hfov": 120,
-                "pitch": -13.589608606517878,
-                "yaw": -179.98060550954563,
-                "type": "multires",
-                "multiRes": {
-                    "path": "./hall1/%l/%s%y_%x",
-                    "fallbackPath": "./hall1/fallback/%s",
-                    "extension": "jpg",
-                    "tileResolution": 512,
-                    "maxLevel": 4,
-                    "cubeResolution": 2472
+            "hotSpots": [
+                {
+                    "pitch": -6.080245992347722, 
+                    "yaw": 90.8088366836222,
+                    "type": "scene",
+                    "sceneId": "lift_boven",
+                    "targetPitch": -16.777839990740816, 
+                    "targetYaw": 109.4080986932102
                 },
-                "hotSpots": [
-                    {
-                        "pitch": -0.7067480351451997,
-                        "yaw": 169.42191935069366,
-                        "type": "scene",
-                        "sceneId": "hal2"
-                    },
-                    {
-                        "pitch": 5.046067166518531, 
-                        "yaw": -12.012919997294574,
-                        "type": "scene",
-                        "sceneId": "main2"
-                    },
-                    {
-                        "pitch": -4.448467429239278, 
-                        "yaw": -97.82655262622805,
-                        "type": "scene",
-                        "sceneId": "lounge"
-                    },
-                    {
-                        "pitch": -0.8675216752696063, 
-                        "yaw": 145.36748450957808,
-                        "type": "scene",
-                        "sceneId": "chemistry"
-                    }
-                ]
+                {
+                    "pitch": 8.286520928939229, 
+                    "yaw": -82.40505143064375,
+                    "type": "info",
+                    "text": "Hoofdruimte (under construction)"
+                },
+                {
+                    "pitch": 6.139796089920167, 
+                    "yaw": 163.4740382190427,
+                    "type": "info",
+                    "text": "Toiletten"
+                }
+            ]
+        },
+        "trap_onder": {
+            "title": "Trap",
+            "hfov": 120,
+            "pitch": -2.8955282623686935, 
+            "yaw": 46.71650550101401,
+            "type": "multires",
+            "multiRes": {
+                "shtHash": "5R_Nt7t7IUofoeRjayRjogaykBayWBayofWBj[ofofofxuV@RjayazoLt7ayoff6ayj[ayj[R*",
+                "path": "space4/trap_onder/%l/%s%y_%x",
+                "fallbackPath": "space4/trap_onder/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 4,
+                "cubeResolution": 2472
             },
-
-            "hal2": {
-                "title": "Hal",
-                "hfov": 120,
-                "pitch": -1.5900725665652766,
-                "yaw": 180.81595286927944,
-                "type": "multires",
-                "multiRes": {
-                    "path": "./hall2/%l/%s%y_%x",
-                    "fallbackPath": "./hall2/fallback/%s",
-                    "extension": "jpg",
-                    "tileResolution": 512,
-                    "maxLevel": 4,
-                    "cubeResolution": 2472
+            "hotSpots": [
+                {
+                    "pitch": 8.840041358074318, 
+                    "yaw": 4.03795073184623,
+                    "type": "scene",
+                    "sceneId": "trap_boven"
                 },
-                "hotSpots": [
-                    {
-                        "pitch": -1.5900725665652766,
-                        "yaw": 180.81595286927944,
-                        "type": "scene",
-                        "sceneId": "hal3"
-                    },
-                    {
-                        "pitch": 1.2420384899582126, 
-                        "yaw": 0.5207305182751316,
-                        "type": "scene",
-                        "sceneId": "hal1",
-                        "targetPitch": 0.8702836381758652,
-                        "targetYaw": -10.651852652355574
-                    },
-                    {
-                        "pitch": 0.8251440174779668, 
-                        "yaw": -135.6824188796749,
-                        "type": "scene",
-                        "sceneId": "flexlab"
-                    },
-                    {
-                        "pitch": 2.9271991318440627, 
-                        "yaw": 32.01266072698344,
-                        "type": "scene",
-                        "sceneId": "chemistry"
-                    }
-                ]
+                {
+                    "pitch": -5.286219105324446,  
+                    "yaw": 92.78692600246148,
+                    "type": "scene",
+                    "sceneId": "buiten_voor"
+                }
+            ]
+        },
+        "trap_boven": {
+            "title": "Trap",
+            "hfov": 120,
+            "pitch":  -1.9136822581285564,
+            "yaw": 179.59482919124144,
+            "type": "multires",
+            "multiRes": {
+                "shtHash": "5O_NxuR+M{WBxuWBWBaeodfRofoebHoeoft7ofayjtoJM{WBWYt7j[W=ofj[a|f+ayfkj[j]a}",
+                "path": "space4/trap_boven/%l/%s%y_%x",
+                "fallbackPath": "space4/trap_boven/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 4,
+                "cubeResolution": 2472
             },
-
-            "chemistry": {
-                "title": "Chemiehok",
-                "hfov": 120,
-                "pitch": 7.7403327495038505, 
-                "yaw": -5.411761652287753,
-                "type": "multires",
-                "multiRes": {
-                    "path": "./chemistry/%l/%s%y_%x",
-                    "fallbackPath": "./chemistry/fallback/%s",
-                    "extension": "jpg",
-                    "tileResolution": 512,
-                    "maxLevel": 4,
-                    "cubeResolution": 2472
+            "hotSpots": [
+                {
+                    "pitch": 20.572682619548214, 
+                    "yaw": 219.1229797109121,
+                    "type": "info",
+                    "text": "Toegang hoofdruimte"
                 },
-                "hotSpots": [
-                    {
-                        "pitch": 0.5741084431879759, 
-                        "yaw": -149.85091604196452,
-                        "targetPitch": 5.291429954797408, 
-                        "targetYaw": -42.52270816144593,
-                        "type": "scene",
-                        "sceneId": "hal1"
-                    },
-                    {
-                        "pitch": -0.07621629587261496, 
-                        "yaw": 193.170725131738,
-                        "targetPitch": -2.570997987893478,
-                        "targetYaw": -165.6317282198043,
-                        "type": "scene",
-                        "sceneId": "hal2"
-                    }
-                ]
-            },            
-
-            "hal3": {
-                "title": "Hal",
-                "hfov": 120,
-                "pitch": 4.318812815347629, 
-                "yaw": 3.5075715929863085,
-                "type": "multires",
-                "multiRes": {
-                    "path": "./hall3/%l/%s%y_%x",
-                    "fallbackPath": "./hall3/fallback/%s",
-                    "extension": "jpg",
-                    "tileResolution": 512,
-                    "maxLevel": 4,
-                    "cubeResolution": 2472
-                },
-                "hotSpots": [
-                    {
-                        "pitch": -2.1952539945938385, 
-                        "yaw": -67.45974874799859,
-                        "type": "scene",
-                        "sceneId": "stofhok"
-                    },
-                    {
-                        "pitch": 3.3859903019317863, 
-                        "yaw": 58.667777270122215,
-                        "type": "scene",
-                        "sceneId": "makerlab"
-                    },
-                    {
-                        "pitch": -3.2766753384507017, 
-                        "yaw": 186.42482062498394,
-                        "type": "scene",
-                        "sceneId": "hal2",
-                        "targetPitch": -3.6448402456498714, 
-                        "targetYaw": -0.22352904305754384
-                    }
-                ]
-            },
-
-            "stofhok": {
-                "title": "Stofhok",
-                "hfov": 120,
-                "pitch": 2.559326508406985, 
-                "yaw": 96.42632409129052,
-                "type": "multires",
-                "multiRes": {
-                    "path": "./stofhok/%l/%s%y_%x",
-                    "fallbackPath": "./stofhok/fallback/%s",
-                    "extension": "jpg",
-                    "tileResolution": 512,
-                    "maxLevel": 4,
-                    "cubeResolution": 2472
-                },
-                "hotSpots": [
-                    {
-                        "pitch": 1.208117447948057, 
-                        "yaw": 63.54936471379833,
-                        "type": "scene",
-                        "sceneId": "hal3"
-                    }
-                ]
-            },
-
-            "makerlab": {
-                "title": "Makerlab",
-                "hfov": 120,
-                "pitch": -6.0344997985769195, 
-                "yaw": 104.28475196534912,
-                "type": "multires",
-                "multiRes": {
-                    "path": "./makerlab/%l/%s%y_%x",
-                    "fallbackPath": "./makerlab/fallback/%s",
-                    "extension": "jpg",
-                    "tileResolution": 512,
-                    "maxLevel": 4,
-                    "cubeResolution": 2472
-                },
-                "hotSpots": [
-                    {
-                        "pitch": -5.089084769449992, 
-                        "yaw": 117.67932187677177,
-                        "type": "scene",
-                        "sceneId": "hal3"
-                    }
-                ]
-            },
-
-            "lounge": {
-                "title": "Lounge",
-                "hfov": 120,
-                "pitch": -5.308615346195358,
-                "yaw": 92.02049489744388,
-                "type": "multires",
-                "multiRes": {
-                    "path": "./lounge/%l/%s%y_%x",
-                    "fallbackPath": "./lounge/fallback/%s",
-                    "extension": "jpg",
-                    "tileResolution": 512,
-                    "maxLevel": 4,
-                    "cubeResolution": 2472
-                },
-                "hotSpots": [
-                    {
-                        "pitch": -5.308615346195358,
-                        "yaw": 92.02049489744388,
-                        "type": "scene",
-                        "sceneId": "hal1",
-                        "targetPitch": -7.691875701110773,
-                        "targetYaw": -84.13418862283372
-                    }
-                ]
-            },
-
-            "flexlab": {
-                "title": "Flexlab",
-                "hfov": 120,
-                "pitch": 3.6721884230197523, 
-                "yaw": -32.99039413086311,
-                "type": "multires",
-                "multiRes": {
-                    "path": "./flexlab/%l/%s%y_%x",
-                    "fallbackPath": "./flexlab/fallback/%s",
-                    "extension": "jpg",
-                    "tileResolution": 512,
-                    "maxLevel": 4,
-                    "cubeResolution": 2472
-                },
-                "hotSpots": [
-                    {
-                        "pitch": -0.3639729352494405, 
-                        "yaw": -66.88562710366459,
-                        "type": "scene",
-                        "sceneId": "hal2",
-                        "targetPitch": -3.7029117744283098, 
-                        "targetYaw": -136.15066960919594
-                    }
-                ]
-            },
-
-            "outside1": {
-                "type": "multires",
-                "multiRes": {
-                    "path": "./outside1/%l/%s%y_%x",
-                    "fallbackPath": "./outside1/fallback/%s",
-                    "extension": "jpg",
-                    "tileResolution": 512,
-                    "maxLevel": 3,
-                    "cubeResolution": 1464
-                },
-                "pitch": 8.145957931754182,
-                "yaw": -179.95040274910755,
-                "hotSpots": [
-                    {
-                        "pitch": 5.470132131694681,
-                        "yaw": -81.23533039097799,
-                        "targetPitch": 7.87356264171407, 
-                        "targetYaw": 139.948626099779,
-                        "type": "scene",
-                        "sceneId": "outside2"
-                    },
-                    {
-                        "pitch": 8.145957931754182,
-                        "yaw": -179.95040274910755,
-                        "type": "scene",
-                        "sceneId": "entree"
-                    },
-                    {
-                        "pitch": 6.2358848673373375, 
-                        "yaw": -167.55679590620363,
-                        "type": "info",
-                        "text": "Druk op de deurbel om de deur te openen."
-                    },
-                    {
-                        "pitch": 14.720345723793478,
-                        "yaw": -7.045777243002584,
-                        "type": "scene",
-                        "sceneId": "outside7"
-                    } 
-                ]
-            },
-
-            "outside2": {
-                "type": "multires",
-                "multiRes": {
-                    "path": "./outside2/%l/%s%y_%x",
-                    "fallbackPath": "./outside2/fallback/%s",
-                    "extension": "jpg",
-                    "tileResolution": 512,
-                    "maxLevel": 3,
-                    "cubeResolution": 1464
-                },
-                "pitch": 1.0782743642558634,
-                "yaw": 52.81609845858671,
-                "hotSpots": [
-                    {
-                        "pitch": 5.636604312168394, 
-                        "yaw": -187.99726178868988,
-                        "type": "scene",
-                        "sceneId": "outside3",
-                        "targetPitch": -0.8851327881815365,
-                        "targetYaw": 177.84022202773954
-                    },
-                    {
-                        "pitch": 10.341517903903888, 
-                        "yaw": 92.18076694951654,
-                        "type": "scene",
-                        "sceneId": "outside1"
-                    },
-                    {
-                        "pitch": 12.169246121622153,
-                        "yaw": 3.296697534975757,
-                        "type": "scene",
-                        "sceneId": "outside7"
-                    } 
-                ]
-            },
-
-            "outside3": {
-                "type": "multires",
-                "multiRes": {
-                    "path": "./outside3/%l/%s%y_%x",
-                    "fallbackPath": "./outside3/fallback/%s",
-                    "extension": "jpg",
-                    "tileResolution": 512,
-                    "maxLevel": 3,
-                    "cubeResolution": 1464
-                },
-                "hotSpots": [
-                    {
-                        "pitch": 0,
-                        "yaw": 0,
-                        "type": "scene",
-                        "sceneId": "outside2"
-                    },
-                    {
-                        "pitch": -0.8851327881815365,
-                        "yaw": 177.84022202773954,
-                        "type": "scene",
-                        "sceneId": "outside4",
-                        "targetPitch": -2.748549745418766,
-                        "targetYaw": 168.89878152418203,
-                        "targetHfov": 120
-                    }
-                ]
-            },
-
-            "outside4": {
-                "type": "multires",
-                "multiRes": {
-                    "path": "./outside4/%l/%s%y_%x",
-                    "fallbackPath": "./outside4/fallback/%s",
-                    "extension": "jpg",
-                    "tileResolution": 512,
-                    "maxLevel": 3,
-                    "cubeResolution": 1464
-                },
-                "hotSpots": [
-                    {
-                        "pitch": -0.8246826449236899,
-                        "yaw": 176.6626362367202,
-                        "type": "scene",
-                        "sceneId": "outside5",
-                        "targetPitch": 1.010437822584903,
-                        "targetYaw": 182.8938626422247
-                    },
-                    {
-                        "pitch": 2.6572024975498887,
-                        "yaw": -6.364577572240574,
-                        "type": "scene",
-                        "sceneId": "outside3",
-                        "targetPitch": "same",
-                        "targetYaw": "same"
-                    }
-                ]
-            },
-
-            "outside5": {
-                "type": "multires",
-                "multiRes": {
-                    "path": "./outside5/%l/%s%y_%x",
-                    "fallbackPath": "./outside5/fallback/%s",
-                    "extension": "jpg",
-                    "tileResolution": 512,
-                    "maxLevel": 3,
-                    "cubeResolution": 1464
-                },
-                "pitch": 0.7754302064856802,
-                "yaw": 1.8166941166311865,
-                "hotSpots": [
-                    {
-                        "pitch": 1.3807165524655864,
-                        "yaw": 183.179792275532,
-                        "type": "scene",
-                        "sceneId": "outside6",
-                        "targetPitch": 0.8181045816675361,
-                        "targetYaw": -17.58193785226587
-                    },
-                    {
-                        "pitch": 3.2923651295947844,
-                        "yaw": -4.151888248372342,
-                        "type": "scene",
-                        "sceneId": "outside4",
-                        "targetPitch": "same",
-                        "targetYaw": "same",
-                        "text": "Richting de voordeur"
-                    },
-                    {
-                        "pitch": 1.1418521410969897,
-                        "yaw": 44.71148775548252,
-                        "type": "info",
-                        "text": "Mocht het hek gesloten zijn, bel dan even met de space, dan komen we open doen."
-                    },
-                    {
-                        "pitch": 10.835354809693175,
-                        "yaw": 10.47866771809204,
-                        "type": "scene",
-                        "sceneId": "main1",
-                        "text": "Direct naar binnen"
-                    }
-                ]
-            },
-
-            "outside6": {
-                "type": "multires",
-                "multiRes": {
-                    "path": "./outside6/%l/%s%y_%x",
-                    "fallbackPath": "./outside6/fallback/%s",
-                    "extension": "jpg",
-                    "tileResolution": 512,
-                    "maxLevel": 3,
-                    "cubeResolution": 1464
-                },
-                "hotSpots": [
-                    {
-                        "pitch": 0.8181045816675361,
-                        "yaw": -17.58193785226587,
-                        "type": "scene",
-                        "sceneId": "outside5"
-                    }
-                ]
-            },
-
-            "outside7": {
-                "pitch": 7.483308521037384, 
-                "yaw": 36.31906895453825,
-                "type": "multires",
-                "multiRes": {
-                    "path": "./outside7/%l/%s%y_%x",
-                    "fallbackPath": "./outside7/fallback/%s",
-                    "extension": "jpg",
-                    "tileResolution": 512,
-                    "maxLevel": 3,
-                    "cubeResolution": 1464
-                },
-                "hotSpots": [
-                    {
-                        "pitch": 10.118455020223083,
-                        "yaw": 31.985774334516325,
-                        "type": "scene",
-                        "sceneId": "outside8"
-                    },
-                    {
-                        "pitch": 7.643388723324535,
-                        "yaw": 138.86902208693954,
-                        "type": "scene",
-                        "sceneId": "outside1"
-                    },  
-                    {
-                        "pitch": 5.933119082633517, 
-                        "yaw": 154.46276338623562,
-                        "targetPitch": 6.981536160458152, 
-                        "targetYaw": 142.8256547608881,
-                        "type": "scene",
-                        "sceneId": "outside2"
-                    } 
-                ]
-            },
-
-            "outside8": {
-                "hfov": 100,
-                "pitch": -4.0151198036140565, 
-                "yaw": 177.42933429405724,
-                "type": "multires",
-                "multiRes": {
-                    "path": "./outside8/%l/%s%y_%x",
-                    "fallbackPath": "./outside8/fallback/%s",
-                    "extension": "jpg",
-                    "tileResolution": 512,
-                    "maxLevel": 3,
-                    "cubeResolution": 1464
-                },
-                "hotSpots": [
-                    {
-                        "pitch": 5.1217452925439115,  
-                        "yaw": 217.59473493436724,
-                        "targetPitch": 5.933119082633517, 
-                        "targetYaw": 154.46276338623562,
-                        "type": "scene",
-                        "sceneId": "outside7"
-                    },
-                    {
-                        "pitch": 7.402042098128676,  
-                        "yaw": 173.9890245754723,
-                        "type": "scene",
-                        "sceneId": "outside1"
-                    } 
-                ]
-            }            
-
+                {
+                    "pitch": -31.377334940228693, 
+                    "yaw": 170.14557860694237,
+                    "type": "scene",
+                    "sceneId": "trap_onder"
+                }
+            ]
         }
     }
+}
