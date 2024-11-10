@@ -3,20 +3,20 @@
         "firstScene": "buiten_kruising",
         "title": "Bitlair",
         "autoLoad": true,
-        "hotSpotDebug": false
+        "hotSpotDebug": true
     },
 
     "scenes": {
         "main1": {
             "title": "Hoofdruimte",
             "hfov": 110,
-            "pitch": -0.30012471554349834,
-            "yaw": 148.01399312366422,
+            "pitch": -3.9092649993635895,
+            "yaw": 292.40759985160247,
             "type": "multires",
             "multiRes": {
-                "shtHash": "5b~pWVRjj?j[ayRjofj[ofR*off6j]oyozWBayoLofofofj[j[WBayWWayofayV@afofj[WBj]",
-                "path": "./space4/test/%l/%s%y_%x",
-                "fallbackPath": "./space4/test/fallback/%s",
+                "shtHash": "5r~Vofs:WBWCxtj?ayWCoLa}j?oeWBWBofWBWBj[ayWBj[t6axWBWCWCfPofoea|j[jsfRfQaz",
+                "path": "space4/hoofdruimte1/%l/%s%y_%x",
+                "fallbackPath": "space4/hoofdruimte1/fallback/%s",
                 "extension": "jpg",
                 "tileResolution": 512,
                 "maxLevel": 4,
@@ -24,32 +24,153 @@
             },
             "hotSpots": [
                 {
-                    "pitch": -0.16430934271439585,
-                    "yaw": -192.6068295024704,
+                    "pitch": -2.8564649244215587, 
+                    "yaw": -64.32427656316577,
                     "type": "scene",
-                    "sceneId": "main2",
-                    "targetPitch": -6.312799033207387,
-                    "targetYaw": 171.05730905368108
+                    "sceneId": "main2"
                 },
                 {
-                    "pitch": 2.094555683205228,
-                    "yaw": 100.0373235627423,
+                    "pitch": 3.699712392555128, 
+                    "yaw": 145.76928080361898,
                     "type": "scene",
-                    "sceneId": "kitchen",
-                    "targetPitch": 8.71388762572763,
-                    "targetYaw": 137.6056832086744
+                    "sceneId": "toilet",
+                    "targetPitch": 0.5220238434372916, 
+                    "targetYaw": 134.7233867210203
                 },
                 {
-                    "pitch": 1.2743805224519125,
-                    "yaw": 55.00217668690969,
+                    "pitch": -11.917060940682283, 
+                    "yaw": 85.28358847495069,
                     "type": "scene",
-                    "sceneId": "overloop",
-                    "targetPitch": -17.862344237901656, 
-                    "targetYaw": -114.34147903814002
+                    "sceneId": "ingang",
+                    "targetPitch": -5.5024001861150795,
+                    "targetYaw": 14.364304089166998
                 }
             ]
         },
-    
+        "main2": {
+            "title": "Hoofdruimte",
+            "hfov": 110,
+            "pitch": -3.9092649993635895,
+            "yaw": 292.40759985160247,
+            "type": "multires",
+            "multiRes": {
+                "shtHash": "5u~VWCa#RjfQt6ofj[a}ayR+ofj?j[WCofWBWBjtazWBjuj[axWBj]ayj[j@ayofayWBofayj?",
+                "path": "space4/hoofdruimte2/%l/%s%y_%x",
+                "fallbackPath": "space4/hoofdruimte2/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 4,
+                "cubeResolution": 2472
+            },
+            "hotSpots": [
+                {
+                    "pitch": 0.46027488286072243, 
+                    "yaw": -66.7931367252445,
+                    "type": "scene",
+                    "sceneId": "main3"
+                },
+                {
+                    "pitch": -2.572472000854321, 
+                    "yaw": 117.40689745884436,
+                    "type": "scene",
+                    "sceneId": "main1",
+                    "targetPitch": -0.8794797204790379, 
+                    "targetYaw": 118.14572891544188
+                }
+            ]
+        },
+        "main3": {
+            "title": "Hoofdruimte",
+            "hfov": 110,
+            "pitch": -3.9092649993635895,
+            "yaw": 292.40759985160247,
+            "type": "multires",
+            "multiRes": {
+                "shtHash": "5t~VafazWBa#oes:fRj[j@WCoeofWCayofWBWBj[j[WBflayjYjta#ayoeoffRa}WUWBj[ayf6",
+                "path": "space4/hoofdruimte3/%l/%s%y_%x",
+                "fallbackPath": "space4/hoofdruimte3/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 4,
+                "cubeResolution": 2472
+            },
+            "hotSpots": [
+                {
+                    "pitch": 0.9504273397128462, 
+                    "yaw": -67.65384994846835,
+                    "type": "scene",
+                    "sceneId": "main4",
+                    "targetPitch": 1.567956521831541,
+                    "targetYaw": -55.35099176916714
+                },
+                {
+                    "pitch": -1.1626168487347281, 
+                    "yaw": 122.82605178331232,
+                    "type": "scene",
+                    "sceneId": "main2",
+                    "targetPitch": 2.799956535454487, 
+                    "targetYaw": 116.57165023273512
+                }
+            ]
+        },
+        "main4": {
+            "title": "Hoofdruimte",
+            "hfov": 110,
+            "pitch": -4.779859597115617, 
+            "yaw": 122.24199709304017,
+            "type": "multires",
+            "multiRes": {
+                "shtHash": "5c~VofjtRjjYj@oJWVf6fka#t6j?ofayofR*ayWVoeayoffljss:ayRkWBj[j[offQWBj[j]fQ",
+                "path": "space4/hoofdruimte4/%l/%s%y_%x",
+                "fallbackPath": "space4/hoofdruimte4/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 4,
+                "cubeResolution": 2472
+            },
+            "hotSpots": [
+                {
+                    "pitch": -0.780335882860515, 
+                    "yaw": 124.72116289147138,
+                    "type": "scene",
+                    "sceneId": "main3",
+                    "targetPitch": -0.8502034014141366, 
+                    "targetYaw": 119.65701218526132
+                }
+            ]
+        },
+        "ingang": {
+            "title": "Ingang",
+            "hfov": 110,
+            "pitch": 1.7293572676644549,
+            "yaw": -159.718965651401,
+            "type": "multires",
+            "multiRes": {
+                "shtHash": "5W~pWBt7M{juV@j[j[WBofWCj?s:WBRjofWBWBofayfRt6ayayj[j[f6ofj[a#WBWBofj[j[oL",
+                "path": "space4/ingang/%l/%s%y_%x",
+                "fallbackPath": "space4/ingang/fallback/%s",
+                "extension": "jpg",
+                "tileResolution": 512,
+                "maxLevel": 4,
+                "cubeResolution": 2472
+            },
+            "hotSpots": [
+                {
+                    "pitch": 7.461189362057897, 
+                    "yaw": -172.43754383711237,
+                    "type": "scene",
+                    "sceneId": "main1"
+                },
+                {
+                    "pitch": -5.895112331700956, 
+                    "yaw": 10.230823969630732,
+                    "type": "scene",
+                    "sceneId": "trap_boven",
+                    "targetPitch": 8.71388762572763,
+                    "targetYaw": 137.6056832086744
+                }
+            ]
+        },
        "buiten_kruising": {
             "title": "Kruising",
             "hfov": 110,
@@ -83,6 +204,12 @@
                     "yaw": -37.620619317330224,
                     "type": "info",
                     "text": "Bitlair"
+                },
+                {
+                    "pitch": 13.2764405594342,
+                    "yaw": -34.65041130178038,
+                    "type": "scene",
+                    "sceneId": "main1"
                 }
             ]
         },
@@ -261,8 +388,8 @@
                 {
                     "pitch": 8.286520928939229, 
                     "yaw": -82.40505143064375,
-                    "type": "info",
-                    "text": "Hoofdruimte (under construction)"
+                    "type": "scene",
+                    "sceneId": "main1"
                 },
                 {
                     "pitch": 6.139796089920167, 
@@ -321,8 +448,8 @@
                 {
                     "pitch": 20.572682619548214, 
                     "yaw": 219.1229797109121,
-                    "type": "info",
-                    "text": "Toegang hoofdruimte"
+                    "type": "scene",
+                    "sceneId": "ingang"
                 },
                 {
                     "pitch": -31.377334940228693, 
