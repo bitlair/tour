@@ -3,7 +3,7 @@
         "firstScene": "buiten_kruising",
         "title": "Bitlair",
         "autoLoad": true,
-        "hotSpotDebug": true
+        "hotSpotDebug": false
     },
 
     "scenes": {
